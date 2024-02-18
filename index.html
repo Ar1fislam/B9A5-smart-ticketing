@@ -10,8 +10,57 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="container mx-auto font-rale">
+  <header>
+    <!-- nav -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl md:text-4xl font-extrabold">A-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn border-[#1DD10066] bg-[#1DD1001A] text-xl text-[#1DD100] mr-3">Bus<span><img src="./images/bus-icon.png" alt=""></span></a>
+        </div>
+      </div>
 
+    <!-- banner -->
+    <div>
+        <div class="hero  md:min-h-[681px] rounded-[32px]" style="background-image: url(./images/banner.png);">
+            <div class=""></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-3xl md:text-6xl font-bold">End-to-End Travel with<br><span class="text-[#1DD100] mt-3">Arif Paribahan</span> </h1>
+                <p class="mb-12 md:w-1/2 mx-auto md:text-lg">Planning a journey has never been easier! With our user-friendly Bus Ticket Booking System, you can book your bus tickets hassle-free.</p>
+                <button class="btn bg-[#1DD100] border-[#1DD100] md:text-xl font-bold">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
