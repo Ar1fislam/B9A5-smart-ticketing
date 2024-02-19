@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A-ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/styles.css">
@@ -190,28 +190,28 @@
                                 </div>
                                 <div class="flex gap-6 items-center mb-6">
                                     <p>A</p>
-                                    <button class="btn w-24">A1</button>
-                                    <button class="btn w-24">A2</button>
+                                    <button id="A1" class="btn seat w-24">A1</button>
+                                    <button id="A2" class="btn seat w-24">A2</button>
                                 </div>
                                 <div class="flex gap-6 items-center mb-6">
                                     <p>B</p>
-                                    <button class="btn w-24">B1</button>
-                                    <button class="btn w-24">B2</button>
+                                    <button class="btn seat w-24">B1</button>
+                                    <button class="btn seat w-24">B2</button>
                                 </div>
                             </div>
                             <!-- right btn -->
                             <div>
                                 <div class="flex gap-6 items-center mb-6">
                                     <button class="btn w-24 invisible"></button>
-                                    <button class="btn w-24"><img src="./images/wheel.png" alt=""></button>
+                                    <button class="btn w-24" disabled><img src="./images/wheel.png" alt=""></button>
                                 </div>
                                 <div class="flex gap-6 items-center mb-6">
-                                    <button class="btn w-24">A3</button>
-                                    <button class="btn w-24">A4</button>
+                                    <button class="btn seat w-24">A3</button>
+                                    <button class="btn seat w-24">A4</button>
                                 </div>
                                 <div class="flex gap-6 items-center mb-6">
-                                    <button class="btn w-24">B3</button>
-                                    <button class="btn w-24">B4</button>
+                                    <button class="btn seat w-24">B3</button>
+                                    <button class="btn seat w-24">B4</button>
                                 </div>
                             </div>
                         </div>
@@ -225,7 +225,7 @@
                         <h2 class="text-2xl font-semibold">Select Your Seat</h2>
                         <hr class="border-dashed text-gray-400 my-4">
                         <div class="bg-[#F7F8F8] pt-2 rounded-xl  font-inter">
-                            <div class="w-[50%] mx-auto py-4 text-left">
+                            <div  class="w-[50%] mx-auto py-4 text-left">
                                 <div class="flex justify-between font-medium gap-10">
                                     <p>Seat <span class="bg-[#1DD100] text-white p-1 rounded-lg">0</span></p>
                                     <p>Class</p>
@@ -233,10 +233,7 @@
                                 </div>
                                 <hr class="border-dashed text-gray-400 my-4">
                                 <!-- append text -->
-                                <div class="flex justify-between text-gray-500  font-medium gap-10 ">
-                                    <p>C2</p>
-                                    <p>Economy</p>
-                                    <p>550</p>
+                                <div id="selected-seat"  class="">
 
                                 </div>
                                 <hr class="border-black my-4">
@@ -247,7 +244,7 @@
                                 <div class="">
                                     <label class="input input-bordered flex items-center gap-2 p-5  rounded-xl">
                                         <input type="text" class="grow" placeholder="Have any copupon?" />
-                                        <button class="btn p-3 bg-[#1DD100] text-white">Apply</button>
+                                        <button id="coupon" class="btn p-3 bg-[#1DD100] text-white" disabled>Apply</button>
                                     </label>
                                 </div>
                                 <div class=" flex justify-between gap-40 font-bold mb-6 mt-6">
@@ -313,6 +310,8 @@
     <footer>
 
     </footer>
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>
