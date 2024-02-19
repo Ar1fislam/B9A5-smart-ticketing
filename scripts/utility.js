@@ -1,20 +1,4 @@
-function getTextElementValueById(elementId){
-    const element = document.getElementById(elementId);
-    const elementValueText = element.innerText;
-    const value = parseInt(elementValueText);
-    return value;
-}
 
-function setTextElementValueById(elementId, value){
-    const element = document.getElementById(elementId);
-    element.innerText = value;
-}
-
-function getElementTextById(elementId){
-    const element = document.getElementById(elementId);
-    const text = element.innerText;
-    return text;
-}
 
 
 function handleSeatSelection(selectedSeat, seatType, seatPrice){
@@ -23,7 +7,7 @@ function handleSeatSelection(selectedSeat, seatType, seatPrice){
     if(!selectedSeatDiv.querySelector(`[data-seat="${selectedSeat}"]`)){
         const seatContainer = document.createElement('div');
 
-    seatContainer.className = 'flex justify-between text-gray-500 font-medium gap-28 mb-2';
+    seatContainer.className = 'flex justify-between text-gray-500 font-medium  md:gap-28 mb-2';
 
     const seatName = document.createElement('p');
     const seatTypes = document.createElement('p');
@@ -46,3 +30,8 @@ function handleSeatSelection(selectedSeat, seatType, seatPrice){
         return false;
     }
 }
+
+function setInnerText(id, value) {
+    document.getElementById(id).innerText = value;
+  }
+  

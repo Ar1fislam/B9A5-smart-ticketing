@@ -48,7 +48,7 @@
         </div>
 
         <!-- banner -->
-        <div class="mx-2 lg:mx-0">
+        <div class="mx-2 xl:mx-0">
             <div class="hero  md:min-h-[681px] rounded-[32px]" style="background-image: url(./images/banner.png);">
                 <div class=""></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -66,7 +66,7 @@
     </header>
     <main>
         <!-- best offer -->
-        <section class="mt-28 mb-32 mx-2 lg:mx-0">
+        <section class="mt-28 mb-32 mx-2 xl:mx-0">
             <h1 class="text-4xl font-bold text-center mb-12">Best offers for you</h1>
             <div class="font-inter flex flex-col lg:flex-row justify-between gap-20">
                 <div class="bg-[#FFBF0F] rounded-3xl flex justify-evenly flex-1">
@@ -112,18 +112,18 @@
         </section>
 
         <!-- arif paribahan -->
-        <section id="ticket-buy" class="border-t-2 rounded-t-[88px] border-[#1DD100]">
+        <section id="ticket-buy" class="border-t-2 rounded-t-[88px] border-[#1DD100] mx-4 xl:mx-0">
             <div class="mx-2 lg:mx-0 mt-32">
                 <div class="text-center mb-12">
-                    <h1 class="font-bold text-4xl lg:text-4xl mb-6">ARIF Paribahan</h1>
-                    <p class="lg:text-lg  w-1/2 mx-auto">Our simple and intuitive booking process allows you to select
+                    <h1 class="font-bold text-3xl lg:text-4xl mb-6">ARIF Paribahan</h1>
+                    <p class="lg:text-lg  lg:w-1/2 mx-auto">Our simple and intuitive booking process allows you to select
                         your departure and arrival locations, choose your preferred bus, and complete your reservation
                         in just a few clicks.</p>
                 </div>
 
                 <!-- seats left part -->
-                <div class="flex justify-between gap-40 items-center">
-                    <div class="flex-grow border-r-2 border-dashed border-[#1DD100] pr-16 ">
+                <div class="flex flex-col lg:flex-row justify-between gap-40 items-center">
+                    <div class="flex-grow lg:border-r-2 border-dashed border-[#1DD100] lg:pr-16 ">
                         <div class="flex justify-between items-center ">
                             <div class="flex gap-4 items-center">
                                 <div><img src="./images/bus-logo.png" alt=""></div>
@@ -133,8 +133,8 @@
                                 </div>
                             </div>
                             <div class="">
-                                <a class="btn border-[#1DD10066] bg-[#1DD1001A] text-xl text-[#1DD100] mr-3 font-inter"><img
-                                        src="./images/seat-green.png" alt=""><span>40</span>Seats left</a>
+                                <a class="btn border-[#1DD10066] bg-[#1DD1001A] text-sm md:text-xl text-[#1DD100] lg:mr-3 font-inter"><img
+                                     class="w-1/5 md:w-fit"   src="./images/seat-green.png" alt=""><span id="seat-left">8</span>Seats left</a>
                             </div>
                         </div>
 
@@ -162,7 +162,7 @@
                 </div>
 
                 <!-- select your seat part -->
-                <div class="mt-24 flex justify-around gap-5">
+                <div class="mt-24 flex flex-col lg:flex-row justify-around gap-5">
                     <!-- left -->
                     <div class="flex-1">
                         <h2 class="text-2xl font-semibold">Select Your Seat</h2>
@@ -179,39 +179,39 @@
                             </div>
                         </div>
                         <hr class="border-dashed text-gray-400 my-4">
-                        <div class="font-inter text-lg text-gray-500 flex items-center gap-20">
+                        <div class="font-inter text-lg text-gray-500 flex items-center gap-5 lg: lg:gap-20">
                             <!-- left btn -->
                             <div>
 
-                                <div class="flex gap-6 items-center mb-6 invisible">
+                                <div class="flex gap-3 lg:gap-6 items-center mb-6 invisible">
                                     <p>A</p>
-                                    <button class="btn w-24">A1</button>
-                                    <button class="btn w-24">A2</button>
+                                    <button class="btn w-20 lg:w-24">A1</button>
+                                    <button class="btn w-20 lg:w-24">A2</button>
                                 </div>
-                                <div class="flex gap-6 items-center mb-6">
+                                <div class="flex gap-3 lg:gap-6 items-center mb-6">
                                     <p>A</p>
-                                    <button id="A1" class="btn seat w-24">A1</button>
-                                    <button id="A2" class="btn seat w-24">A2</button>
+                                    <button id="A1" class="btn seat w-20 lg:w-24">A1</button>
+                                    <button id="A2" class="btn seat w-20 lg:w-24">A2</button>
                                 </div>
-                                <div class="flex gap-6 items-center mb-6">
+                                <div class="flex gap-3 lg:gap-6 items-center mb-6">
                                     <p>B</p>
-                                    <button class="btn seat w-24">B1</button>
-                                    <button class="btn seat w-24">B2</button>
+                                    <button class="btn seat w-20 lg:w-24">B1</button>
+                                    <button class="btn seat w-20 lg:w-24">B2</button>
                                 </div>
                             </div>
                             <!-- right btn -->
                             <div>
-                                <div class="flex gap-6 items-center mb-6">
-                                    <button class="btn w-24 invisible"></button>
-                                    <button class="btn w-24" disabled><img src="./images/wheel.png" alt=""></button>
+                                <div class="flex gap-3 lg:gap-6 items-center mb-6">
+                                    <button class="btn w-20 lg:w-24 invisible"></button>
+                                    <button class="btn w-20 lg:w-24" disabled><img src="./images/wheel.png" alt=""></button>
                                 </div>
-                                <div class="flex gap-6 items-center mb-6">
-                                    <button class="btn seat w-24">A3</button>
-                                    <button class="btn seat w-24">A4</button>
+                                <div class="flex gap-3 lg:gap-6 items-center mb-6">
+                                    <button class="btn seat w-20 lg:w-24">A3</button>
+                                    <button class="btn seat w-20 lg:w-24">A4</button>
                                 </div>
-                                <div class="flex gap-6 items-center mb-6">
-                                    <button class="btn seat w-24">B3</button>
-                                    <button class="btn seat w-24">B4</button>
+                                <div class="flex gap-3 lg:gap-6 items-center mb-6">
+                                    <button class="btn seat w-20 lg:w-24">B3</button>
+                                    <button class="btn seat w-20 lg:w-24">B4</button>
                                 </div>
                             </div>
                         </div>
@@ -225,9 +225,9 @@
                         <h2 class="text-2xl font-semibold">Select Your Seat</h2>
                         <hr class="border-dashed text-gray-400 my-4">
                         <div class="bg-[#F7F8F8] pt-2 rounded-xl  font-inter">
-                            <div  class="w-[50%] mx-auto py-4 text-left">
+                            <div  class="p-2  xl:px-32  text-left">
                                 <div class="flex justify-between font-medium gap-10">
-                                    <p>Seat <span class="bg-[#1DD100] text-white p-1 rounded-lg">0</span></p>
+                                    <p>Seat <span id="seat-count" class="bg-[#1DD100] text-white p-1 rounded-lg">0</span></p>
                                     <p>Class</p>
                                     <p>Price</p>
                                 </div>
@@ -239,17 +239,17 @@
                                 <hr class="border-black my-4">
                                 <div class=" flex justify-between gap-40 font-bold mb-6">
                                     <p>Total Price</p>
-                                    <p>BDT 1100</p>
+                                    <p>BDT <span id="total-price">00</span></p>
                                 </div>
-                                <div class="">
+                                <div id="coupon-div" class="">
                                     <label class="input input-bordered flex items-center gap-2 p-5  rounded-xl">
-                                        <input type="text" class="grow" placeholder="Have any copupon?" />
+                                        <input id="coupon-txt" type="text" class="grow" placeholder="Have any coupon?" />
                                         <button id="coupon" class="btn p-3 bg-[#1DD100] text-white" disabled>Apply</button>
                                     </label>
                                 </div>
                                 <div class=" flex justify-between gap-40 font-bold mb-6 mt-6">
                                     <p>Grand Total</p>
-                                    <p>BDT 1100</p>
+                                    <p>BDT <span id="grand-total">00</span></p>
                                 </div>
                             </div>
 
@@ -278,7 +278,7 @@
                             </label>
 
                             <!-- Open the modal using ID.showModal() method -->
-                            <button class="btn w-full bg-[#1DD100] text-white text-xl font-bold rounded-xl" onclick="my_modal_5.showModal()">Next</button>
+                            <button disabled id="next-btn" class="btn w-full bg-[#1DD100] text-white text-xl font-bold rounded-xl" onclick="my_modal_5.showModal()">Next</button>
                             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle p-5">
                                 <div class="modal-box text-center flex flex-col items-center">
                                     <img src="./images/success.png" alt="">
@@ -299,8 +299,8 @@
                                 class="btn w-full bg-[#1DD100] text-white text-xl font-bold rounded-xl">Next</button> -->
                         </div>
                         <div class="text-gray-400 flex justify-around mt-6">
-                            <a href="">Terms and Conditions</a>
-                            <a href="">Cancellation Policy</a>
+                            <a class="underline" href="">Terms and Conditions</a>
+                            <a class="underline" href="">Cancellation Policy</a>
                         </div>
                     </div>
                 </div>
