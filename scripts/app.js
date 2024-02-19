@@ -64,3 +64,6 @@ for (const seat of allSeat) {
 
     })
 }
+function reloadPage(){
+    location.reload();
+}
